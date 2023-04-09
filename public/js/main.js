@@ -56,30 +56,3 @@ const getInfo = async (event) => {
 
 submitBtn.addEventListener('click', getInfo);
 
-// chatGPT code below 
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const cityName = document.getElementById('cityName')
-//     const submitBtn = document.getElementById('submitBtn')
-//     const city_name = document.getElementById('city_name')
-  
-//     const getInfo = async (event) => {
-//         event.preventDefault();
-//         let cityVal = cityName.value;
-//         if (cityVal === "") {
-//             city_name.innerText = `Please write the name before search`;
-//         }
-//         else {
-//             try{
-//                 let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=868641c131aa1dbb40cf7b30f8e35dcc`
-//                 const response = await fetch(url);
-//                 console.log(response);
-//             } catch{
-//                 city_name.innerText = `Please write the name of city correctly`;
-//             }
-//         }
-//     }
-  
-//     submitBtn.addEventListener('click', getInfo);
-//   });
-  
